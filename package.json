@@ -7,7 +7,8 @@
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14",
     "redux": "*",
-    "react-redux": "*"
+    "react-redux": "*",
+    "react-router-dom": "*"
   },
   "scripts": {
     "start": "react-scripts start",

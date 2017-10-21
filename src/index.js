@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
+import ReactRouter from './components/react-router';
 
 import allReducers from './reducers';
 import {createStore} from 'redux';
@@ -10,7 +11,5 @@ import {Provider} from 'react-redux';
 
 const store = createStore(allReducers);
 
-ReactDOM.render(<Provider store={store}>
-        <App></App>
-    </Provider>, document.getElementById('root'));
+ReactDOM.render(<ReactRouter />, document.getElementById('root'));
 registerServiceWorker();
